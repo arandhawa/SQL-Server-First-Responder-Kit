@@ -6,8 +6,8 @@ Before adding a new check, make sure to add a Github issue for it first, and hav
 
 If you want to change anything about a check - the priority, finding, URL, or ID - open a Github issue first. The relevant scripts have to be updated too.
 
-CURRENT HIGH CHECKID: 40
-If you want to add a new check, start at 41
+CURRENT HIGH CHECKID: 47
+If you want to add a new check, start at 48
 
 | Priority | FindingsGroup | Finding | URL | CheckID |
 |----------|---------------------------------|---------------------------------------|-------------------------------------------------|----------|
@@ -25,21 +25,27 @@ If you want to add a new check, start at 41
 | 1 | SQL Server Internal Maintenance | Log File Shrinking | https://BrentOzar.com/go/logsize | 14 |
 | 10 | Server Performance | Poison Wait Detected | https://BrentOzar.com/go/poison | 30 |
 | 10 | Server Performance | Target Memory Lower Than Max | https://BrentOzar.com/go/target | 35 |
+| 10 | Azure Performance | Database is Maxed Out | https://BrentOzar.com/go/maxedout | 41 |
 | 40 | Table Problems | Forwarded Fetches/Sec High | https://BrentOzar.com/go/fetch | 29 |
 | 50 | In-Memory OLTP | Garbage Collection in Progress | https://BrentOzar.com/go/garbage | 31 |
 | 50 | Query Problems | Compilations/Sec High | https://BrentOzar.com/go/compile | 15 |
+| 50 | Query Problems | Implicit Transactions | https://www.brentozar.com/go/ImplicitTransactions/ | 37 |
+| 50 | Query Problems | Memory Leak in USERSTORE_TOKENPERM Cache | https://BrentOzar.com/go/userstore | 45 |
 | 50 | Query Problems | Plan Cache Erased Recently | https://BrentOzar.com/go/freeproccache | 7 |
 | 50 | Query Problems | Re-Compilations/Sec High | https://BrentOzar.com/go/recompile | 16 |
-| 50 | Query Problems | ImplicitTransactions | https://www.brentozar.com/go/ImplicitTransactions/ | 37 |
+| 50 | Query Problems | Statistics Updated Recently | https://BrentOzar.com/go/stats | 44 |
+| 50 | Query Problems | High Percentage Of Runnable Queries | https://erikdarlingdata.com/go/RunnableQueue/ | 47 |
 | 50 | Server Performance | High CPU Utilization | https://BrentOzar.com/go/cpu | 24 |
 | 50 | Server Performance | High CPU Utilization - Non SQL Processes | https://BrentOzar.com/go/cpu | 28 |
-| 50 | Server Performance | Page Life Expectancy Low | https://BrentOzar.com/go/ple | 10 |
 | 50 | Server Performance | Slow Data File Reads | https://BrentOzar.com/go/slow | 11 |
 | 50 | Server Performance | Slow Log File Writes | https://BrentOzar.com/go/slow | 12 |
 | 50 | Server Performance | Too Much Free Memory | https://BrentOzar.com/go/freememory | 34 |
 | 50 | Server Performance | Memory Grants pending | https://www.brentozar.com/blitz/memory-grants | 39 |
 | 100 | In-Memory OLTP | Transactions aborted | https://BrentOzar.com/go/aborted | 32 |
 | 100 | Query Problems | Suboptimal Plans/Sec High | https://BrentOzar.com/go/suboptimal | 33 |
+| 100 | Query Problems | Bad Estimates | https://brentozar.com/go/skewedup | 42 |
+| 100 | Query Problems | Skewed Parallelism | https://brentozar.com/go/skewedup | 43 |
+| 100 | Query Problems | Query with a memory grant exceeding @MemoryGrantThresholdPct | https://www.brentozar.com/memory-grants-sql-servers-public-toilet/ | 46 |
 | 200 | Wait Stats | (One per wait type) | https://BrentOzar.com/sql/wait-stats/#(waittype) | 6 |
 | 210 | Query Stats | Plan Cache Analysis Skipped | https://BrentOzar.com/go/topqueries | 18 |
 | 210 | Query Stats | Top Resource-Intensive Queries | https://BrentOzar.com/go/topqueries | 17 |
